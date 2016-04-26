@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        opciones = new String[] {"Flash","Superman","Batman"};
+        opciones = new String[] {"Primer Fragment","Superman","Batman"};
 
         drawerLayout = (DrawerLayout) findViewById(R.id.contenedorPrincipal);
         listView = (ListView) findViewById(R.id.menuIzq);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Fragment fragment = null;
                 switch(position){
-                    case 0: fragment = new FlashFragment();
+                    case 0: fragment = new PrimerFragment();
                         break;
                     case 1: fragment =  new SupermanFragment();
                         break;
