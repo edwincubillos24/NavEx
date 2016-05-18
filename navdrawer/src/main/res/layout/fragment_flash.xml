@@ -1,3 +1,10 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,5 +23,11 @@
         <TextView
             style = "@style/textViewStyle.Content"
             android:text="@string/poderesflash"/>
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="400dp"
+            android:layout_height="200dp" />
+
     </LinearLayout>
 </FrameLayout>
+</ScrollView>
